@@ -8,7 +8,7 @@ class Products extends React.Component {
         return(<React.Fragment>
             <h1>Products</h1>
             {products.map((product,index) =>
-            {return<h1><Link to={`/products/${index}`}>{product}</Link></h1>})}
+            {return<h1><Link to={`/Products/${index}`}>{product}</Link></h1>})}
         </React.Fragment>)
     }
 }

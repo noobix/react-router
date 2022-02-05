@@ -5,6 +5,7 @@ import Products from './pages/Products'
 import Cart from './pages/Cart'
 import About from './pages/About'
 import Navbar from './pages/Navbar'
+import Details from './pages/Details'
 
 class Router extends React.Component {
     render(){
@@ -13,7 +14,8 @@ class Router extends React.Component {
             <Navbar />
                 <Routes>
                     <Route path="/" element={<Home />}/>
-                    <Route path="/Products/:id" element={<Products />}/>
+                    <Route path="/Products" element={<Products />}/>
+                    <Route path="Products/:id" element={<Details />} />
                     <Route path="/Cart" element={<Cart />}/>
                     <Route path="/About" element={<About />}/>
                     <Route path="*" element={<><h1>Error 404: Page Not Found</h1></>}/>
